@@ -97,4 +97,20 @@ public:
 
 /*────────────────────────────────────────────────────────────────────────────*/
 
+namespace nodepp { namespace argon2 { namespace hash {
+
+    string_t get( const string_t& pass, const string_t& salt, const string_t& secr, const string_t& addr ) {
+        auto hash = ptr_t<uchar>( 32, '\0' ); argon2_t argon; argon.hash( hash, pass, salt, secr, addr );
+        return encoder::hex::get( hash );
+    }
+
+    string_t get( const string_t& pass ) {
+        auto hash = ptr_t<uchar>( 32, '\0' ); argon2_t argon; argon.hash( hash,pass );
+        return encoder::hex::get( hash );
+    }
+
+}}}
+
+/*────────────────────────────────────────────────────────────────────────────*/
+
 #endif
