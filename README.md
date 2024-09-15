@@ -6,6 +6,8 @@ Argon2 for NodePP
 # Argon2
     🪟: pacman -S mingw-w64-ucrt-x86_64-argon2
     🐧: sudo apt install libargon2-dev
+# Nodepp
+    💻: https://github.com/NodeppOficial/nodepp
 ```
 
 ## Usage 
