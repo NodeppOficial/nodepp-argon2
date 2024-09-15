@@ -2,9 +2,11 @@
 Argon2 for NodePP
 
 ## Dependencies
-- **Argon2**
-    - 🪟: `pacman -S mingw-w64-ucrt-x86_64-argon2`
-    - 🐧: `sudo apt install libargon2-dev`
+```bash
+# Argon2
+    🪟: pacman -S mingw-w64-ucrt-x86_64-argon2
+    🐧: sudo apt install libargon2-dev
+```
 
 ## Usage 
 ```cpp
