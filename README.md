@@ -30,8 +30,10 @@ void onMain() {
 ```
 
 ## Build & Run
-- 🐧: `g++ -o main main.cpp -I ./include -largon2 ; ./main`
-- 🪟: `g++ -o main main.cpp -I ./include -largon2 ; ./main`
+```bash
+🪟: g++ -o main main.cpp -I ./include -largon2 -lws2_32 ; ./main
+🐧: g++ -o main main.cpp -I ./include -largon2 ; ./main
+```
 
 ## License
 
